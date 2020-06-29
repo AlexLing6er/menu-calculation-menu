@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    char i;
+
+    int k,z,c,d;
+    k=0;
+    z=0;
+    c=0;
+    d=0;
+    i=0;
+    while(scanf("%c",&i),i!='\n')
+    {
+        if(i==' ')
+            k++;
+        else if((i>='a'&&i<='z')||(i>='A'&&i<='Z'))
+            z++;
+        else if(i==',')
+            d++;
+        else c++;
+
+    }
+    printf( "空格:%d个，字母%d个，逗号%d个，其余字符%d个",k,z,d,c);
+    return 0;
+}
